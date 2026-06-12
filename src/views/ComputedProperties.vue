@@ -41,8 +41,22 @@ const tickets = ref([
 ] 
 );
 
+const selectedPriority = ref('');
+
 </script>
 
 <template>
-    <input type="search" placeholder="Ex: base de données" class="input input-bordered w-full max-w-xs"/>Rechercher un ticket
+    <div class="p-8 pt-8 flex items-center justify-center gap-4">
+s se  <fieldset className="fieldset flex flex-col ">
+  <legend className="fieldset-legend">Rechercher un ticket</legend>
+  <input type="text" className="input" placeholder="Ex: base de données" />
+  <legend className="fieldset-legend">Sélectionner une priorité</legend>
+  <select defaultValue="Pick a color" className="select">
+  <option disabled={true}>Priorité</option>
+  <option>Haute</option>
+  <option>Moyenne</option>
+  <option>Basse</option>
+</select>
+</fieldset>
+</div>
 </template>

@@ -16,7 +16,7 @@ const props = defineProps({
 
 <template>
 <div class="">
- <div class="card-body text-center">
+ <div class="card-body text-center text-xl italic text-info">
     <p>{{ name }}</p>
     <p>{{ age }} ans</p>
 </div>

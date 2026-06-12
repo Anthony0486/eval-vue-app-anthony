@@ -26,7 +26,6 @@ const updateUser = (userName, userAge) => {
 <ActiveUser
     :name="oneUser.name"
     :age="oneUser.age"
-/>
  />
 <UserData @new-user="updateUser" />
 </div>
